@@ -41,7 +41,7 @@ class InstallTests(unittest.TestCase):
     def test_single_skill_is_portable(self):
         with tempfile.TemporaryDirectory() as temporary:
             destination = Path(temporary) / "skills"
-            name = "jbh-work-handoff"
+            name = "work-handoff"
             result = self.run_install(destination, "-Skill", name)
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual([p.name for p in destination.iterdir()], [name])
@@ -51,14 +51,14 @@ class InstallTests(unittest.TestCase):
     def test_conflict_prevents_all_writes(self):
         with tempfile.TemporaryDirectory() as temporary:
             destination = Path(temporary) / "skills"
-            existing = destination / "jbh-work-handoff"
+            existing = destination / "work-handoff"
             existing.mkdir(parents=True)
             sentinel = existing / "SKILL.md"
             sentinel.write_text("User custom skill", encoding="utf-8")
             result = self.run_install(destination)
             self.assertNotEqual(result.returncode, 0)
             self.assertEqual(sentinel.read_text(encoding="utf-8"), "User custom skill")
-            self.assertEqual([p.name for p in destination.iterdir()], ["jbh-work-handoff"])
+            self.assertEqual([p.name for p in destination.iterdir()], ["work-handoff"])
 
 
 if __name__ == "__main__":

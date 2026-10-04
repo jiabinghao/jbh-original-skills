@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目协作基线"
+  short_description: "盘点仓库约定和检查入口，补齐能够支持后续协作的最小文档"
+  default_prompt: "请用 $project-baseline 接手这个仓库并补齐启动、测试和任务记录说明。"

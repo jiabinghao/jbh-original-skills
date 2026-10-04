@@ -1,0 +1,4 @@
+interface:
+  display_name: "技能选型助手"
+  short_description: "根据任务与环境筛选适合的技能，核对依赖许可并说明推荐理由"
+  default_prompt: "请用 $skill-scout 为 Windows 上的 Codex 筛选一个适合批量整理 PDF 的技能。"

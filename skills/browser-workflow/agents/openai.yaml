@@ -1,0 +1,4 @@
+interface:
+  display_name: "浏览器任务执行"
+  short_description: "通过已有浏览器工具执行网页任务，逐步核验保存后的真实结果"
+  default_prompt: "请用 $browser-workflow 在指定网站整理三款产品的公开参数和来源。"

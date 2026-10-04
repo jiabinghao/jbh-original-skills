@@ -12,7 +12,7 @@ $knownNames = @($catalog.skills | ForEach-Object { $_.name })
 if ($Skill.Count -eq 0) { $Skill = $knownNames }
 $selectedNames = @($Skill | Select-Object -Unique)
 foreach ($name in $selectedNames) {
-    if ($name -notmatch '^jbh-[a-z0-9]+(-[a-z0-9]+)*$' -or $knownNames -notcontains $name) {
+    if ($name -notmatch '^[a-z0-9]+(-[a-z0-9]+)*$' -or $knownNames -notcontains $name) {
         throw "Unknown skill: $name"
     }
 }

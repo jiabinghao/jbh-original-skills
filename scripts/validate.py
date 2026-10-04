@@ -47,7 +47,7 @@ def inspect(root: Path) -> tuple[int, list[str]]:
     for entry in entries:
         try:
             name = entry["name"]
-            if not re.fullmatch(r"jbh-[a-z0-9]+(?:-[a-z0-9]+)*", name) or len(name) > 64:
+            if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", name) or len(name) > 64:
                 raise ValueError("Invalid skill name")
             names.append(name)
             directory = root / "skills" / name

@@ -1,0 +1,4 @@
+interface:
+  display_name: "行为测试先行"
+  short_description: "围绕用户行为编写失败测试，完成实现并留下真实的回归验证记录"
+  default_prompt: "请用 $behavior-tests 为优惠券到期后仍可使用的问题添加回归测试并修复。"

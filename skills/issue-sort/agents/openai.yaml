@@ -1,0 +1,4 @@
+interface:
+  display_name: "问题与需求分流"
+  short_description: "依据影响和证据整理错误报告与功能请求，给出优先级和就绪判断"
+  default_prompt: "请用 $issue-sort 整理这些问题报告，给出优先级、缺失信息和验收条件。"
