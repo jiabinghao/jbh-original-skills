@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目上下文核对"
+  short_description: "核对方案文档与代码中的业务规则，定位冲突并形成修订建议"
+  default_prompt: "请用 $jbh-context-check 检查这份退款方案与现有文档和代码是否一致。"

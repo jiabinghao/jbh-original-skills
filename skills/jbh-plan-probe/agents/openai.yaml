@@ -1,0 +1,4 @@
+interface:
+  display_name: "方案压力测试"
+  short_description: "检查方案关键假设与验证成本，形成可执行且可判断的下一步"
+  default_prompt: "请用 $jbh-plan-probe 评估我两周内上线一个知识付费小产品的方案。"
