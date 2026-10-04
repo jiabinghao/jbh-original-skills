@@ -1,0 +1,4 @@
+interface:
+  display_name: "原型验证"
+  short_description: "构建能回答关键未知的小型可运行原型，记录观测证据与继续条件"
+  default_prompt: "请用 $prototype-lab 制作本地文件筛选原型，验证用户能否在一分钟内找到目标文件。"

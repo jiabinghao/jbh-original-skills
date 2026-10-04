@@ -1,8 +1,8 @@
 # Original Skills
 
-面向中文任务与 Codex 使用习惯的十个独立编写的 AI Agent 技能。版本：2.0.0。
+面向中文任务与 Codex 使用习惯的十三个独立编写的 AI Agent 技能。版本：2.1.0。
 
-这些技能是任务指令包，帮助代理更准确地选择流程、使用工具与核验成果。它们不是十款独立应用，不自动提供浏览器驱动、搜索服务或开发运行环境。
+这些技能是任务指令包，帮助代理更准确地选择流程、使用工具与核验成果。它们不是十三款独立应用，不自动提供浏览器驱动、搜索服务或开发运行环境。
 
 ## 技能目录
 
@@ -18,12 +18,17 @@
 | [project-baseline](skills/project-baseline/SKILL.md) · 项目协作基线 | 盘点仓库约定和检查入口，补齐能够支持后续协作的最小文档 |
 | [work-handoff](skills/work-handoff/SKILL.md) · 工作续接说明 | 将当前目标、已完成工作与剩余依赖整理成可核实的任务交接材料 |
 | [issue-sort](skills/issue-sort/SKILL.md) · 问题与需求分流 | 依据影响和证据整理错误报告与功能请求，给出优先级和就绪判断 |
+| [prototype-lab](skills/prototype-lab/SKILL.md) · 原型验证 | 构建能回答关键未知的小型可运行原型，记录观测证据与继续条件 |
+| [decision-map](skills/decision-map/SKILL.md) · 决策依赖审查 | 比较相互依赖的方案选择，梳理条件分支、撤回代价和承诺顺序 |
+| [video-build-flow](skills/video-build-flow/SKILL.md) · 视频构建流程 | 通过现有 HyperFrames 工具预览、检查与渲染项目，核验视频规格和关键片段 |
 
 每项技能的输入、输出、示例请求及能力边界见 [完整中文说明](docs/SKILLS.md)。
 
 ## 设计来源与原创边界
 
 2026-10-04 在 [SkillForge 首页](https://skills.yangsir.net/)选择“安装量”排序，取页面显示的前十项作为**主题参考**。用户提供的 [trending 页面](https://skills.yangsir.net/trending)按增长量排序，不能当作总安装量榜；该页当天同时显示对比日期 2026-09-27 → 2026-10-04，因此本仓库不声称验证了其“24 小时”统计口径。
+
+2026-10-05 再按首页总安装量排序，排除已参考的前十项，新增剩余前三个主题：prototype、grilling、hyperframes-cli，页面总排名分别为 11、12、13。采样时网站最近更新标记仍为 10-04；数字代表第三方安装量显示值，不是实际使用人数。原有十项保留首次采样记录，新增三项单独记录本次日期。
 
 采用新的名称、中文表达和针对实际任务的执行规则，未引入所选技能的入口正文、代码、模板、图片或软件实现。浏览榜单时只将名称、作者、链接、约数与功能方向作为选题信息；这些引用不表示原作者参与或认可本项目。
 
@@ -50,7 +55,7 @@ Set-Location original-skills
 只安装一个技能：
 
 ```powershell
-.\scripts\install.ps1 -Skill work-handoff
+.\scripts\install.ps1 -Skill prototype-lab
 ```
 
 指定其他技能目录：

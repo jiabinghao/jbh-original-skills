@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频构建流程"
+  short_description: "通过现有 HyperFrames 工具预览、检查与渲染项目，核验视频规格和关键片段"
+  default_prompt: "请用 $video-build-flow 把现有 HTML 视频项目渲染为 30 秒的 1080p MP4，并检查转场和音轨。"

@@ -1,7 +1,7 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
-  "snapshot_date": "2026-10-04",
+  "snapshot_date": "2026-10-05",
   "source_catalog": "https://skills.yangsir.net/",
   "ranking": "homepage popular skills sorted by total installs; rounded display values; ties retain displayed order",
   "skills": [
@@ -16,7 +16,8 @@
         "name": "find-skills",
         "author": "vercel-labs",
         "display_installs": "3.7M",
-        "url": "https://skills.yangsir.net/skill/find-skills"
+        "url": "https://skills.yangsir.net/skill/find-skills",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -30,7 +31,8 @@
         "name": "grill-me",
         "author": "mattpocock",
         "display_installs": "1.3M",
-        "url": "https://skills.yangsir.net/skill/sm3-grill-me"
+        "url": "https://skills.yangsir.net/skill/sm3-grill-me",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -44,7 +46,8 @@
         "name": "grill-with-docs",
         "author": "mattpocock",
         "display_installs": "1.1M",
-        "url": "https://skills.yangsir.net/skill/gh-grill-with-docs"
+        "url": "https://skills.yangsir.net/skill/gh-grill-with-docs",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -58,7 +61,8 @@
         "name": "agent-browser",
         "author": "vercel-labs",
         "display_installs": "1.0M",
-        "url": "https://skills.yangsir.net/skill/agent-browser"
+        "url": "https://skills.yangsir.net/skill/agent-browser",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -72,7 +76,8 @@
         "name": "improve-codebase-architecture",
         "author": "mattpocock",
         "display_installs": "1.0M",
-        "url": "https://skills.yangsir.net/skill/sm3-improve-codebase-architecture"
+        "url": "https://skills.yangsir.net/skill/sm3-improve-codebase-architecture",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -86,7 +91,8 @@
         "name": "tdd",
         "author": "mattpocock",
         "display_installs": "1.0M",
-        "url": "https://skills.yangsir.net/skill/ssh2-tdd"
+        "url": "https://skills.yangsir.net/skill/ssh2-tdd",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -100,7 +106,8 @@
         "name": "frontend-design",
         "author": "anthropics",
         "display_installs": "950.1K",
-        "url": "https://skills.yangsir.net/skill/frontend-design-anthropic"
+        "url": "https://skills.yangsir.net/skill/frontend-design-anthropic",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -114,7 +121,8 @@
         "name": "setup-matt-pocock-skills",
         "author": "mattpocock",
         "display_installs": "932.4K",
-        "url": "https://skills.yangsir.net/skill/gh-setup-matt-pocock-skills"
+        "url": "https://skills.yangsir.net/skill/gh-setup-matt-pocock-skills",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -128,7 +136,8 @@
         "name": "handoff",
         "author": "mattpocock",
         "display_installs": "910.5K",
-        "url": "https://skills.yangsir.net/skill/gh-handoff"
+        "url": "https://skills.yangsir.net/skill/gh-handoff",
+        "snapshot_date": "2026-10-04"
       }
     },
     {
@@ -142,7 +151,56 @@
         "name": "triage",
         "author": "mattpocock",
         "display_installs": "880.8K",
-        "url": "https://skills.yangsir.net/skill/gh-triage"
+        "url": "https://skills.yangsir.net/skill/gh-triage",
+        "snapshot_date": "2026-10-04"
+      }
+    },
+    {
+      "name": "prototype-lab",
+      "title": "原型验证",
+      "summary": "构建能回答关键未知的小型可运行原型，记录观测证据与继续条件",
+      "example": "请用 $prototype-lab 制作本地文件筛选原型，验证用户能否在一分钟内找到目标文件。",
+      "entrypoint": "skills/prototype-lab/SKILL.md",
+      "inspiration": {
+        "rank": 11,
+        "eligible_rank": 1,
+        "name": "prototype",
+        "author": "mattpocock",
+        "display_installs": "877.5K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/gh-prototype"
+      }
+    },
+    {
+      "name": "decision-map",
+      "title": "决策依赖审查",
+      "summary": "比较相互依赖的方案选择，梳理条件分支、撤回代价和承诺顺序",
+      "example": "请用 $decision-map 比较本地与托管部署，梳理数据位置、运维能力和服务选型之间的依赖。",
+      "entrypoint": "skills/decision-map/SKILL.md",
+      "inspiration": {
+        "rank": 12,
+        "eligible_rank": 2,
+        "name": "grilling",
+        "author": "mattpocock",
+        "display_installs": "825.6K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/gh-grilling"
+      }
+    },
+    {
+      "name": "video-build-flow",
+      "title": "视频构建流程",
+      "summary": "通过现有 HyperFrames 工具预览、检查与渲染项目，核验视频规格和关键片段",
+      "example": "请用 $video-build-flow 把现有 HTML 视频项目渲染为 30 秒的 1080p MP4，并检查转场和音轨。",
+      "entrypoint": "skills/video-build-flow/SKILL.md",
+      "inspiration": {
+        "rank": 13,
+        "eligible_rank": 3,
+        "name": "hyperframes-cli",
+        "author": "heygen-com",
+        "display_installs": "779.5K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/daily-hyperframes-cli"
       }
     }
   ]

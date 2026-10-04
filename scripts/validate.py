@@ -33,8 +33,8 @@ def inspect(root: Path) -> tuple[int, list[str]]:
     try:
         manifest = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
         entries = manifest["skills"]
-        if not isinstance(entries, list) or len(entries) != 10:
-            raise ValueError("Catalog must contain exactly ten skills")
+        if not isinstance(entries, list) or not entries:
+            raise ValueError("Catalog must contain a nonempty list of skills")
     except (OSError, ValueError, KeyError, TypeError) as exc:
         return 0, [f"catalog.json: {exc}"]
     try:

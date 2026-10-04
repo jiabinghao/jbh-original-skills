@@ -1,4 +1,5 @@
 """Observable checks for packaging errors and non-overwriting installs."""
+import json
 import shutil
 import subprocess
 import sys
@@ -41,12 +42,20 @@ class InstallTests(unittest.TestCase):
     def test_single_skill_is_portable(self):
         with tempfile.TemporaryDirectory() as temporary:
             destination = Path(temporary) / "skills"
-            name = "work-handoff"
-            result = self.run_install(destination, "-Skill", name)
-            self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertEqual([p.name for p in destination.iterdir()], [name])
-            for file in ("SKILL.md", "LICENSE", "agents/openai.yaml"):
-                self.assertEqual((destination / name / file).read_bytes(), (ROOT / "skills" / name / file).read_bytes())
+            entries = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))["skills"]
+            for entry in entries:
+                name = entry["name"]
+                with self.subTest(skill=name):
+                    target = destination / name
+                    result = self.run_install(target, "-Skill", name)
+                    self.assertEqual(result.returncode, 0, result.stderr)
+                    self.assertEqual([p.name for p in target.iterdir()], [name])
+                    source = ROOT / "skills" / name
+                    expected = {p.relative_to(source) for p in source.rglob("*") if p.is_file()}
+                    actual = {p.relative_to(target / name) for p in (target / name).rglob("*") if p.is_file()}
+                    self.assertEqual(actual, expected)
+                    for file in expected:
+                        self.assertEqual((target / name / file).read_bytes(), (source / file).read_bytes())
 
     def test_conflict_prevents_all_writes(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -1,0 +1,4 @@
+interface:
+  display_name: "决策依赖审查"
+  short_description: "比较相互依赖的方案选择，梳理条件分支、撤回代价和承诺顺序"
+  default_prompt: "请用 $decision-map 比较本地与托管部署，梳理数据位置、运维能力和服务选型之间的依赖。"
