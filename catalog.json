@@ -234,6 +234,22 @@
         "snapshot_date": "2026-10-05",
         "url": "https://skills.yangsir.net/skill/gh-teach"
       }
+    },
+    {
+      "name": "domain-vocabulary",
+      "title": "领域术语与规则建模",
+      "summary": "从业务实例与代码证据建立统一术语、状态规则和边界，定位同名异义与业务冲突",
+      "example": "请用 $domain-vocabulary 梳理订单、支付和退款的术语，检查文档与代码中的状态规则。",
+      "entrypoint": "skills/domain-vocabulary/SKILL.md",
+      "inspiration": {
+        "rank": 16,
+        "eligible_rank": 3,
+        "name": "domain-modeling",
+        "author": "mattpocock",
+        "display_installs": "746.3K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/gh-domain-modeling"
+      }
     }
   ]
 }
