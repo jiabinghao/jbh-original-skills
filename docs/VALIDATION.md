@@ -9,7 +9,7 @@ python scripts/validate.py
 python -m unittest discover -s tests -v
 ```
 
-前者检查当前目录清单（v2.2.0 为 17 个技能）、入口文件、界面元数据、catalog.json、MIT 许可及本地文档引用；后者检查正确安装包、损坏引用的拒绝、安装预演无写入、单技能安装完整性和同名冲突时不覆盖且不产生部分安装。
+前者检查当前目录清单（v2.2.0 为 18 个技能）、入口文件、界面元数据、catalog.json、MIT 许可及本地文档引用；后者检查正确安装包、损坏引用的拒绝、安装预演无写入、单技能安装完整性和同名冲突时不覆盖且不产生部分安装。
 
 这些检查只使用合成的临时目录，没有安装到真实 Codex 技能目录，也不访问生产服务。
 
@@ -36,3 +36,11 @@ GitHub Actions 的结果以仓库 Actions 页面为准；本地通过不能替�
 新增三个技能均通过当前环境 skill-creator 的 quick_validate.py；十三项完整包的 validate.py 通过；unittest 五项检查通过且无跳过项。单技能可移植性检查扩展到目录清单中的每一项，对所有文件（包括视频技能的引用文档）核对安装后的字节内容。
 
 没有安装或运行 HyperFrames，没有输出实际视频，因此不声称视频渲染流程已获得端到端验证。
+
+## v2.2.0 五项本地技能发布
+
+2026-10-05 按本地未上传清单顺序添加 react-perf-tune、learning-path、domain-vocabulary、html-video-compose、module-contracts。各目录保留 SKILL.md、agents/openai.yaml、中文说明及 MIT LICENSE，文件内容与原本地包一致。
+
+五项新增技能均通过 skill-creator 的 quick_validate.py。18 项完整包的 validate.py 通过；unittest 五项安装与打包检查全部通过，无跳过，运行 8.933 秒；逐项安装覆盖全部 18 个技能目录和完整文件内容。临时安装不写入用户实际技能目录。
+
+本次验证没有运行实际 React 优化、交互学习、业务建模或视频渲染任务，不承诺端到端业务效果。GitHub Actions 状态以远端运行结果为准。

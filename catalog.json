@@ -266,6 +266,22 @@
         "snapshot_date": "2026-10-05",
         "url": "https://skills.yangsir.net/skill/daily-hyperframes"
       }
+    },
+    {
+      "name": "module-contracts",
+      "title": "模块边界与契约设计",
+      "summary": "以真实调用场景设计模块接口，明确状态归属、失败语义和恢复路径并比较维护成本",
+      "example": "请用 $module-contracts 设计订单通知模块的接口，说明重试、幂等和供应商切换的边界。",
+      "entrypoint": "skills/module-contracts/SKILL.md",
+      "inspiration": {
+        "rank": 18,
+        "eligible_rank": 5,
+        "name": "codebase-design",
+        "author": "mattpocock",
+        "display_installs": "723.1K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/gh-codebase-design"
+      }
     }
   ]
 }

@@ -64,3 +64,4 @@
 | 15 | [teach](https://skills.yangsir.net/skill/gh-teach) | [learning-path](../skills/learning-path/说明.md) | 围绕可展示的学习目标安排讲解与练习，根据实际作答调整难度并记录后续学习路径 |
 | 16 | [domain-modeling](https://skills.yangsir.net/skill/gh-domain-modeling) | [domain-vocabulary](../skills/domain-vocabulary/说明.md) | 从业务实例与代码证据建立统一术语、状态规则和边界，定位同名异义与业务冲突 |
 | 17 | [hyperframes](https://skills.yangsir.net/skill/daily-hyperframes) | [html-video-compose](../skills/html-video-compose/说明.md) | 将分镜和素材组织为可定位的 HTML 视频场景，检查嵌套时间、动画与关键边界画面 |
+| 18 | [codebase-design](https://skills.yangsir.net/skill/gh-codebase-design) | [module-contracts](../skills/module-contracts/说明.md) | 以真实调用场景设计模块接口，明确状态归属、失败语义和恢复路径并比较维护成本 |
