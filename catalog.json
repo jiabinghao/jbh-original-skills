@@ -218,6 +218,22 @@
         "snapshot_date": "2026-10-05",
         "url": "https://skills.yangsir.net/skill/vercel-react-best-practices"
       }
+    },
+    {
+      "name": "learning-path",
+      "title": "学习路径与练习",
+      "summary": "围绕可展示的学习目标安排讲解与练习，根据实际作答调整难度并记录后续学习路径",
+      "example": "请用 $learning-path 帮我学习 Python 异步任务，先诊断基础，再用小练习逐步确认理解。",
+      "entrypoint": "skills/learning-path/SKILL.md",
+      "inspiration": {
+        "rank": 15,
+        "eligible_rank": 2,
+        "name": "teach",
+        "author": "mattpocock",
+        "display_installs": "748.2K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/gh-teach"
+      }
     }
   ]
 }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "学习路径与练习"
+  short_description: "围绕可展示的学习目标安排讲解与练习，根据实际作答调整难度并记录后续学习路径"
+  default_prompt: "请用 $learning-path 帮我学习 Python 异步任务，先诊断基础，再用小练习逐步确认理解。"

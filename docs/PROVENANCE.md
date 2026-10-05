@@ -61,3 +61,4 @@
 | 总排名 | 参考主题 | 本仓库技能 | 功能 |
 | --- | --- | --- | --- |
 | 14 | [vercel-react-best-practices](https://skills.yangsir.net/skill/vercel-react-best-practices) | [react-perf-tune](../skills/react-perf-tune/说明.md) | 定位 React 与 Next.js 的实际性能瓶颈，完成局部优化并比较相同场景的前后结果 |
+| 15 | [teach](https://skills.yangsir.net/skill/gh-teach) | [learning-path](../skills/learning-path/说明.md) | 围绕可展示的学习目标安排讲解与练习，根据实际作答调整难度并记录后续学习路径 |
