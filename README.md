@@ -1,8 +1,8 @@
 # Original Skills
 
-面向中文任务与 Codex 使用习惯的 16 个独立编写的 AI Agent 技能。版本：2.2.0。
+面向中文任务与 Codex 使用习惯的 17 个独立编写的 AI Agent 技能。版本：2.2.0。
 
-这些技能是任务指令包，帮助代理更准确地选择流程、使用工具与核验成果。它们不是 16 款独立应用，不自动提供浏览器驱动、搜索服务或开发运行环境。
+这些技能是任务指令包，帮助代理更准确地选择流程、使用工具与核验成果。它们不是 17 款独立应用，不自动提供浏览器驱动、搜索服务或开发运行环境。
 
 ## 技能目录
 
@@ -24,6 +24,7 @@
 | [react-perf-tune](skills/react-perf-tune/说明.md) · React 性能改进 | 定位 React 与 Next.js 的实际性能瓶颈，完成局部优化并比较相同场景的前后结果 |
 | [learning-path](skills/learning-path/说明.md) · 学习路径与练习 | 围绕可展示的学习目标安排讲解与练习，根据实际作答调整难度并记录后续学习路径 |
 | [domain-vocabulary](skills/domain-vocabulary/说明.md) · 领域术语与规则建模 | 从业务实例与代码证据建立统一术语、状态规则和边界，定位同名异义与业务冲突 |
+| [html-video-compose](skills/html-video-compose/说明.md) · HTML 视频内容合成 | 将分镜和素材组织为可定位的 HTML 视频场景，检查嵌套时间、动画与关键边界画面 |
 
 每项技能的输入、输出、示例请求及能力边界见 [完整中文说明](docs/SKILLS.md)。
 

@@ -250,6 +250,22 @@
         "snapshot_date": "2026-10-05",
         "url": "https://skills.yangsir.net/skill/gh-domain-modeling"
       }
+    },
+    {
+      "name": "html-video-compose",
+      "title": "HTML 视频内容合成",
+      "summary": "将分镜和素材组织为可定位的 HTML 视频场景，检查嵌套时间、动画与关键边界画面",
+      "example": "请用 $html-video-compose 把三段分镜做成 20 秒的 HTML 视频项目，核对嵌套场景和转场边界。",
+      "entrypoint": "skills/html-video-compose/SKILL.md",
+      "inspiration": {
+        "rank": 17,
+        "eligible_rank": 4,
+        "name": "hyperframes",
+        "author": "heygen-com",
+        "display_installs": "746.0K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/daily-hyperframes"
+      }
     }
   ]
 }
