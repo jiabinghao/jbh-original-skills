@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "snapshot_date": "2026-10-05",
   "source_catalog": "https://skills.yangsir.net/",
@@ -201,6 +201,22 @@
         "display_installs": "779.5K",
         "snapshot_date": "2026-10-05",
         "url": "https://skills.yangsir.net/skill/daily-hyperframes-cli"
+      }
+    },
+    {
+      "name": "react-perf-tune",
+      "title": "React 性能改进",
+      "summary": "定位 React 与 Next.js 的实际性能瓶颈，完成局部优化并比较相同场景的前后结果",
+      "example": "请用 $react-perf-tune 排查这个 React 搜索页输入卡顿的问题，并用同一数据量比较优化前后的表现。",
+      "entrypoint": "skills/react-perf-tune/SKILL.md",
+      "inspiration": {
+        "rank": 14,
+        "eligible_rank": 1,
+        "name": "vercel-react-best-practices",
+        "author": "vercel-labs",
+        "display_installs": "767.6K",
+        "snapshot_date": "2026-10-05",
+        "url": "https://skills.yangsir.net/skill/vercel-react-best-practices"
       }
     }
   ]
